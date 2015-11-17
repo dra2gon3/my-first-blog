@@ -3,7 +3,7 @@
 
 
 {% block content %}
-	{% for post in posts %}
+	{% for post in posts reversed %}
 	<span>
 		<div class="post">
 			<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
